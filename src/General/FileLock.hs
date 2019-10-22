@@ -76,7 +76,7 @@ usingLockFile cleanup file = do
 #if MIN_VERSION_unix(2,8,0)
 openSimpleFd file mode = openFd file mode defaultFileFlags
 #else
-openSimpleFd file mode = openFd file mode Nothing defaultFileFlags
+openSimpleFd file mode = openFd file mode defaultFileFlags
 #endif
 
 #endif
